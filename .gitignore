@@ -3,6 +3,12 @@
 ################################################################################
 
 /.vs/NLayerUdemyApp2/FileContentIndex
+/NLayer.API/obj/Debug/net6.0
+/NLayer.Caching/obj/Debug/net6.0
+/NLayer.Core/obj/Debug/net6.0
+/NLayer.Repository/obj/Debug/net6.0
+/NLayer.Service/obj/Debug/net6.0
+/NLayer.Web/obj/Debug/net6.0
 
 
 
@@ -369,3 +375,15 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/.vs/NLayerUdemyApp2/v17/.suo
+/NLayer.API/obj/Debug/net6.0/ref/NLayer.API.dll
+/NLayer.API/obj/Debug/net6.0/refint/NLayer.API.dll
+/NLayer.API/obj/Debug/net6.0/apphost.exe
+/NLayer.API/obj/Debug/net6.0/NLayer.API.AssemblyInfo.cs
+/NLayer.API/obj/Debug/net6.0/NLayer.API.AssemblyInfoInputs.cache
+/NLayer.API/obj/Debug/net6.0/NLayer.API.csproj.AssemblyReference.cache
+/NLayer.API/obj/Debug/net6.0/NLayer.API.csproj.CoreCompileInputs.cache
+/NLayer.API/obj/Debug/net6.0/NLayer.API.csproj.FileListAbsolute.txt
+/NLayer.API/obj/Debug/net6.0/NLayer.API.dll
+/NLayer.API/obj/Debug/net6.0/NLayer.API.genruntimeconfig.cache
+/NLayer.API/obj/Debug/net6.0/NLayer.API.pdb
