@@ -3,19 +3,20 @@
 ################################################################################
 
 /.vs/NLayerUdemyApp2/FileContentIndex
-NLayer.API/obj/*
-NLayer.Caching/obj/*
-NLayer.Core/obj/Debug/*
-NLayer.Repository/*
-NLayer.Service/obj/*
-NLayer.Web/obj/Debug/*
+/NLayer.API/obj/*
+/NLayer.Caching/obj/*
+/NLayer.Core/obj/Debug/*
+/NLayer.Repository/obj/*
+/NLayer.Repository/debug/*
+/NLayer.Service/obj/*
+/NLayer.Web/obj/Debug/*
 
-NLayer.API/bin/*
-NLayer.Caching/bin/*
-NLayer.Core/bin/*
-NLayer.Repository/*
-NLayer.Service/bin/*
-NLayer.Web/bin/*
+/NLayer.API/bin/*
+/NLayer.Caching/bin/*
+/NLayer.Core/bin/*
+/NLayer.Repository/bin/*
+/NLayer.Service/bin/*
+/NLayer.Web/bin/*
 
 
 
@@ -392,3 +393,11 @@ FodyWeavers.xsd
 /NLayer.Web/bin/Debug/net6.0/*
 /NLayer.Web/obj/Debug/net6.0/*
 
+/NLayer.Repository/obj/Debug/net6.0/NLayer.Repository.AssemblyInfo.cs
+/NLayer.Repository/obj/Debug/net6.0/NLayer.Repository.AssemblyInfoInputs.cache
+/NLayer.Repository/obj/Debug/net6.0/NLayer.Repository.csproj.AssemblyReference.cache
+/NLayer.Service/obj/Debug/net6.0/NLayer.Service.AssemblyInfo.cs
+/NLayer.Service/obj/Debug/net6.0/NLayer.Service.AssemblyInfoInputs.cache
+/NLayer.Service/obj/Debug/net6.0/NLayer.Service.csproj.AssemblyReference.cache
+/NLayer.Core/obj/Debug/net6.0/NLayer.Core.AssemblyInfo.cs
+/NLayer.Core/obj/Debug/net6.0/NLayer.Core.AssemblyInfoInputs.cache
