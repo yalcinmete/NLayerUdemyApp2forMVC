@@ -2116,11 +2116,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yalcin.mete\\source\\repos\\NLayerUdemyApp2forMVC\\NLayer.Service\\NLayer.Service.csproj",
+      "projectUniqueName": "C:\\Users\\yalcin.mete\\OneDrive - Sanko Holding\\Belgeler\\GitHub\\NLayerUdemyApp2forMVC\\NLayer.Service\\NLayer.Service.csproj",
       "projectName": "NLayer.Service",
-      "projectPath": "C:\\Users\\yalcin.mete\\source\\repos\\NLayerUdemyApp2forMVC\\NLayer.Service\\NLayer.Service.csproj",
+      "projectPath": "C:\\Users\\yalcin.mete\\OneDrive - Sanko Holding\\Belgeler\\GitHub\\NLayerUdemyApp2forMVC\\NLayer.Service\\NLayer.Service.csproj",
       "packagesPath": "C:\\Users\\yalcin.mete\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yalcin.mete\\source\\repos\\NLayerUdemyApp2forMVC\\NLayer.Service\\obj\\",
+      "outputPath": "C:\\Users\\yalcin.mete\\OneDrive - Sanko Holding\\Belgeler\\GitHub\\NLayerUdemyApp2forMVC\\NLayer.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
@@ -2145,8 +2145,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\yalcin.mete\\source\\repos\\NLayerUdemyApp2forMVC\\NLayer.Repository\\NLayer.Repository.csproj": {
-              "projectPath": "C:\\Users\\yalcin.mete\\source\\repos\\NLayerUdemyApp2forMVC\\NLayer.Repository\\NLayer.Repository.csproj"
+            "C:\\Users\\yalcin.mete\\OneDrive - Sanko Holding\\Belgeler\\GitHub\\NLayerUdemyApp2forMVC\\NLayer.Repository\\NLayer.Repository.csproj": {
+              "projectPath": "C:\\Users\\yalcin.mete\\OneDrive - Sanko Holding\\Belgeler\\GitHub\\NLayerUdemyApp2forMVC\\NLayer.Repository\\NLayer.Repository.csproj"
             }
           }
         }
