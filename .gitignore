@@ -3,19 +3,19 @@
 ################################################################################
 
 /.vs/NLayerUdemyApp2/FileContentIndex
-/NLayer.API/obj/Debug/net6.0
-/NLayer.Caching/obj/Debug/net6.0
-/NLayer.Core/obj/Debug/net6.0
-/NLayer.Repository/obj/Debug/net6.0
-/NLayer.Service/obj/Debug/net6.0
-/NLayer.Web/obj/Debug/net6.0
+NLayer.API/obj/*
+NLayer.Caching/obj/*
+NLayer.Core/obj/Debug/*
+NLayer.Repository/*
+NLayer.Service/obj/*
+NLayer.Web/obj/Debug/*
 
-/NLayer.API/bin/Debug/net6.0
-/NLayer.Caching/bin/Debug/net6.0
-/NLayer.Core/bin/Debug/net6.0
-/NLayer.Repository/bin/Debug/net6.0
-/NLayer.Service/bin/Debug/net6.0
-/NLayer.Web/bin/Debug/net6.0
+NLayer.API/bin/*
+NLayer.Caching/bin/*
+NLayer.Core/bin/*
+NLayer.Repository/*
+NLayer.Service/bin/*
+NLayer.Web/bin/*
 
 
 
