@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dIu2UXIUfUs=",
+  "dgSpecHash": "yzcDXwEEpPY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\yalcin.mete\\source\\repos\\NLayerUdemyApp2forMVC\\NLayer.Web\\NLayer.Web.csproj",
+  "projectFilePath": "C:\\Users\\yalcin.mete\\OneDrive - Sanko Holding\\Belgeler\\GitHub\\NLayerUdemyApp2forMVC\\NLayer.Web\\NLayer.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yalcin.mete\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\yalcin.mete\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
