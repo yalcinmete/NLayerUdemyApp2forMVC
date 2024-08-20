@@ -10,6 +10,14 @@
 /NLayer.Service/obj/Debug/net6.0
 /NLayer.Web/obj/Debug/net6.0
 
+/NLayer.API/bin/Debug/net6.0
+/NLayer.Caching/bin/Debug/net6.0
+/NLayer.Core/bin/Debug/net6.0
+/NLayer.Repository/bin/Debug/net6.0
+/NLayer.Service/bin/Debug/net6.0
+/NLayer.Web/bin/Debug/net6.0
+
+
 
 
 ## Ignore Visual Studio temporary files, build results, and
@@ -387,3 +395,4 @@ FodyWeavers.xsd
 /NLayer.API/obj/Debug/net6.0/NLayer.API.dll
 /NLayer.API/obj/Debug/net6.0/NLayer.API.genruntimeconfig.cache
 /NLayer.API/obj/Debug/net6.0/NLayer.API.pdb
+/NLayer.Caching/obj/Debug/net6.0/refint/NLayer.Caching.dll
