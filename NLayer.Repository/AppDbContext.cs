@@ -1,19 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NLayer.Core.Models;
-using NLayer.Repository.Configurations;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NLayer.Repository
 {
-    public class AppDbContext :DbContext
+    public class AppDbContext : DbContext
     {
         //Veritabanı yolunu startup dosyasından vermek istediğimizde DbContextOptions'dan yardım alırız.
-        public AppDbContext(DbContextOptions<AppDbContext> options):base(options) 
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
             //ProductFeature Product üzerinden de bu şekilde eklenebilir.
             //var p = new Product() { ProductFeature = new ProductFeature() { Color... } };
@@ -22,6 +16,62 @@ namespace NLayer.Repository
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductFeature> ProductFeatures { get; set; } //ProductFeature Product üzerinden de eklenebilir.
+
+
+        //MVC Video54 Ortası.SaveChangesAsync yerine SaveChange'i de çağırdığımız durumlar olabilir. SaveChange'i de override edelim:
+        public override int SaveChanges()
+        {
+            foreach (var item in ChangeTracker.Entries())
+            {
+                if (item.Entity is BaseEntity entityReference)
+                {
+                    switch (item.State)
+                    {
+                        case EntityState.Added:
+                            {
+                                entityReference.CreatedDate = DateTime.Now;
+                                break;
+                            }
+                        case EntityState.Modified:
+                            {
+                                entityReference.UploadDate = DateTime.Now;
+                                break;
+                            }
+                    }
+                }
+            }
+            return base.SaveChanges();
+        }
+
+
+        //MVC Video54.Created Date / Update Date. MVC veya API'ye özgü değil Created Date / Update Date atamak için savechanged metodunu ezebiliriz.EF core SaveChanges metodu çağırana kadar veritabanına işlem yapmaz. Buraad veritabanına yansıtmadan hemen öncesinde entity'nin update mi edildiğini yeni insert mi edildiğini anlayacağız.Buna göre updated date create date güncelleyeceğiz.
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+        {
+            foreach (var item in ChangeTracker.Entries()) 
+            {
+                if (item.Entity is BaseEntity entityReference)
+                {
+                    switch (item.State)
+                    {
+                        //item.state = entitystate.Added ise;
+                        case EntityState.Added:
+                            {
+                                entityReference.CreatedDate = DateTime.Now;
+                                break;
+                            }
+                        case EntityState.Modified:
+                            {
+                                //entityReference 'nin CreatedDate propertisindeki Modified'ını değiştirme.Createddate sıfırlanmasın
+                                Entry(entityReference).Property(x => x.CreatedDate).IsModified = false;
+                                entityReference.UploadDate = DateTime.Now;
+                                break;
+                            }
+                    }
+                }
+            }
+
+            return base.SaveChangesAsync(cancellationToken);
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -42,7 +92,7 @@ namespace NLayer.Repository
                 Height = 100,
                 Width = 200,
                 ProductId = 1,
-            }, 
+            },
             new ProductFeature()
             {
                 Id = 2,

@@ -1,0 +1,29 @@
+@* @using NLayer.Core.DTOs  Her zaman bunu yazmak zorunda kalmamak için viewimporta ekledik*@
+
+@model List<ProductWithCategoryDto>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Price</td>
+            <td>Stock</td>
+            <td>Category</td>
+            <td>CreatedDate</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <td>@item.</td>
+        }
+    </tbody>
+</table>
+
+<h1>Index</h1>

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq.Expressions;
 
 namespace NLayer.Core.Repositories
 {
@@ -17,7 +12,7 @@ namespace NLayer.Core.Repositories
         //IQueryable dönmemizin nedeni,IQueryable sorguları direkt veritabanına gitmez.ToList(),ToListAsync() gibi metotları çağırırsak veritabanına gider. IQueryable dan sonra where koşulları da eklemek istediğimiz için yani daha performanslı olması için IQueryable kullanıyoruz. Yani veritabınına şuan bir sorgu yapmıyoruz. Veritabanına yapılacak sorguyu oluşturuyoruz.
         //productRepository.GetAll(x=>x.id>5).OrderBy.ToListAsync();
         //TDelegete'ler metotları referans ederler.
-        IQueryable<T> Where(Expression<Func<T,bool>> expression);
+        IQueryable<T> Where(Expression<Func<T, bool>> expression);
 
         Task<bool> AnyAsync(Expression<Func<T, bool>> expression);
 

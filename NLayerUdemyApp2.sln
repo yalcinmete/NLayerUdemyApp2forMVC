@@ -15,6 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLayer.API", "NLayer.API\NL
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLayer.Web", "NLayer.Web\NLayer.Web.csproj", "{1411D780-0CEF-4A28-9494-E9BCC2E9FED0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{61E20347-19E5-4EDE-A2F9-D3A617A6D52D} = {61E20347-19E5-4EDE-A2F9-D3A617A6D52D}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLayer.Caching", "NLayer.Caching\NLayer.Caching.csproj", "{61E20347-19E5-4EDE-A2F9-D3A617A6D52D}"
 EndProject

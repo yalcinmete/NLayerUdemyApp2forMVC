@@ -416,6 +416,9 @@ FodyWeavers.xsd
 /NLayer.Service/bin/*
 /NLayer.Service/obj/*
 /NLayer.Web/obj/*
+/NLayer.Web/obj/*
+/NLayer.Service/obj/*
+/NLayer.Web/NLayer.Web.csproj.user
 
 /NLayer.Repository/obj/Debug/net6.0/NLayer.Repository.AssemblyInfo.cs
 /NLayer.Repository/obj/Debug/net6.0/NLayer.Repository.AssemblyInfoInputs.cache
@@ -425,6 +428,3 @@ FodyWeavers.xsd
 /NLayer.Service/obj/Debug/net6.0/NLayer.Service.csproj.AssemblyReference.cache
 /NLayer.Core/obj/Debug/net6.0/NLayer.Core.AssemblyInfo.cs
 /NLayer.Core/obj/Debug/net6.0/NLayer.Core.AssemblyInfoInputs.cache
-/NLayer.Web/obj/project.assets.json
-/NLayer.Service/obj/NLayer.Service.csproj.nuget.dgspec.json
-/NLayer.Web/NLayer.Web.csproj.user

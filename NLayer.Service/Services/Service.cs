@@ -3,12 +3,7 @@ using NLayer.Core.Repositories;
 using NLayer.Core.Services;
 using NLayer.Core.UnitOfWorks;
 using NLayer.Service.Exceptions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NLayer.Service.Services
 {
@@ -52,7 +47,7 @@ namespace NLayer.Service.Services
             //Video39. Entity null kontrollerimizi servis katmanında yapmalıyız.
             //return await _repository.GetByIdAsync(id);
             var hasProduct = await _repository.GetByIdAsync(id);
-            if (hasProduct==null)
+            if (hasProduct == null)
             {
                 //null ise bizim özel olarak hazırladığımız ClientSideException dönelim. Generic olduğu için burası T nin typeof'unu alalım.
                 //hatayı global exceptionımız olan UserCustomException() middleware'i yakalıyor.
@@ -82,7 +77,7 @@ namespace NLayer.Service.Services
 
         public IQueryable<T> Where(Expression<Func<T, bool>> expression)
         {
-            return _repository.Where(expression);   
+            return _repository.Where(expression);
         }
     }
 }
